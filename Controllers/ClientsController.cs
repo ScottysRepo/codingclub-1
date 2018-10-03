@@ -24,7 +24,7 @@ namespace CodingClubTest.Controllers
             return View(await _context.Client.ToListAsync());
         }
 
-        // GET: Members/Details/5
+        // GET: Clients/Details/5
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -32,39 +32,39 @@ namespace CodingClubTest.Controllers
                 return NotFound();
             }
 
-            var member = await _context.Member
+            var client = await _context.Client
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (member == null)
+            if (client == null)
             {
                 return NotFound();
             }
 
-            return View(member);
+            return View(client);
         }
 
-        // GET: Members/Create
+        // GET: Clients/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Members/Create
+        // POST: Clients/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Email")] Member member)
+        public async Task<IActionResult> Create([Bind("ID,Email")] Client client)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(member);
+                _context.Add(client);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(member);
+            return View(client);
         }
 
-        // GET: Members/Edit/5
+        // GET: Clients/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -72,22 +72,22 @@ namespace CodingClubTest.Controllers
                 return NotFound();
             }
 
-            var member = await _context.Member.FindAsync(id);
-            if (member == null)
+            var client = await _context.Client.FindAsync(id);
+            if (client == null)
             {
                 return NotFound();
             }
-            return View(member);
+            return View(client);
         }
 
-        // POST: Members/Edit/5
+        // POST: Clients/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("ID,Email")] Member member)
+        public async Task<IActionResult> Edit(string id, [Bind("ID,Email")] Client client)
         {
-            if (id != member.ID)
+            if (id != client.ID)
             {
                 return NotFound();
             }
@@ -96,12 +96,12 @@ namespace CodingClubTest.Controllers
             {
                 try
                 {
-                    _context.Update(member);
+                    _context.Update(client);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MemberExists(member.ID))
+                    if (!MemberExists(client.ID))
                     {
                         return NotFound();
                     }
@@ -112,10 +112,10 @@ namespace CodingClubTest.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(member);
+            return View(client);
         }
 
-        // GET: Members/Delete/5
+        // GET: Client/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -123,30 +123,30 @@ namespace CodingClubTest.Controllers
                 return NotFound();
             }
 
-            var member = await _context.Member
+            var client = await _context.Client
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (member == null)
+            if (client == null)
             {
                 return NotFound();
             }
 
-            return View(member);
+            return View(client);
         }
 
-        // POST: Members/Delete/5
+        // POST: Clients/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var member = await _context.Member.FindAsync(id);
-            _context.Member.Remove(member);
+            var client = await _context.Member.FindAsync(id);
+            _context.Member.Remove(client);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool MemberExists(string id)
         {
-            return _context.Member.Any(e => e.ID == id);
+            return _context.Client.Any(e => e.ID == id);
         }
     }
 }
