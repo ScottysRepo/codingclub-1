@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CodingClubTest.Models;
 
-namespace CodingClubTest.Controllers
+namespace CodingClubTest.Controller
 {
     public class HomeController : Controller
     {
