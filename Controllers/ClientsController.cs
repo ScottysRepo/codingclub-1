@@ -101,7 +101,7 @@ namespace CodingClubTest.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MemberExists(client.ID))
+                    if (!ClientExists(client.ID))
                     {
                         return NotFound();
                     }
