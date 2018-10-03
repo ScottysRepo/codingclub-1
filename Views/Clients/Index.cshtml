@@ -1,28 +1,39 @@
-@model IEnumerable<CodingClubTest.Models.Member>
+@model IEnumerable<CodingClubTest.Models.Client>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Index of Clients";
 }
 
-<h2>Index</h2>
+<h2>Index of Clients</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Index">Index of Clients</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                @Html.DisplayNameFor(model => model.name)
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.password)
+            </th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Email)
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.password)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
