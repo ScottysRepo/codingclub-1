@@ -138,13 +138,13 @@ namespace CodingClubTest.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var client = await _context.Member.FindAsync(id);
-            _context.Member.Remove(client);
+            var client = await _context.Client.FindAsync(id);
+            _context.Client.Remove(client);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool MemberExists(string id)
+        private bool ClientExists(string id)
         {
             return _context.Client.Any(e => e.ID == id);
         }
