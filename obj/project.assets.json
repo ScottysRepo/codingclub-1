@@ -14288,28 +14288,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jv954091\\.nuget\\packages\\": {},
+    "C:\\Users\\Rebecca Vengen\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Fall20180\\CodingClubTest\\CodingClubTest\\CodingClubTest.csproj",
+      "projectUniqueName": "d:\\4390CodingClub\\codingclub\\CodingClubTest.csproj",
       "projectName": "CodingClubTest",
-      "projectPath": "c:\\Fall20180\\CodingClubTest\\CodingClubTest\\CodingClubTest.csproj",
-      "packagesPath": "C:\\Users\\jv954091\\.nuget\\packages\\",
-      "outputPath": "c:\\Fall20180\\CodingClubTest\\CodingClubTest\\obj\\",
+      "projectPath": "d:\\4390CodingClub\\codingclub\\CodingClubTest.csproj",
+      "packagesPath": "C:\\Users\\Rebecca Vengen\\.nuget\\packages\\",
+      "outputPath": "d:\\4390CodingClub\\codingclub\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jv954091\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Rebecca Vengen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
