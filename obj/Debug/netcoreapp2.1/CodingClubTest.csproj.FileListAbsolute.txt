@@ -109,3 +109,11 @@ D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.Views.pdb
 D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.dll
 D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.pdb
 D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.csproj.CopyComplete
+C:\Users\lf962076\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.csprojAssemblyReference.cache
+C:\Users\lf962076\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.csproj.CoreCompileInputs.cache
+C:\Users\lf962076\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.RazorAssemblyInfo.cache
+C:\Users\lf962076\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.RazorAssemblyInfo.cs
+C:\Users\lf962076\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.AssemblyInfoInputs.cache
+C:\Users\lf962076\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.AssemblyInfo.cs
+C:\Users\lf962076\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.dll
+C:\Users\lf962076\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.pdb
