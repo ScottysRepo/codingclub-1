@@ -53,7 +53,7 @@ namespace CodingClubTest.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Email")] Member member)
+        public async Task<IActionResult> Create([Bind("ID,Email,FirstName,LastName,buffID,Classification")] Member member)  //Here is where I will add the new items for DB
         {
             if (ModelState.IsValid)
             {
