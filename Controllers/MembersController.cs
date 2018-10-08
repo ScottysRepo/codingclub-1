@@ -85,7 +85,7 @@ namespace CodingClubTest.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("ID,Email")] Member member)
+        public async Task<IActionResult> Edit(string id, [Bind("ID,Email,FirstName,LastName,buffID,Classification")] Member member)
         {
             if (id != member.ID)
             {
