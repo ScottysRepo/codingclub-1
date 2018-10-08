@@ -18,6 +18,7 @@ namespace CodingClubTest.Models
         public string LastName {get;set;}
         [Required]
         [Display(Name="Buff ID")]
+        //Error message does not work yet
         [StringLength(10,MinimumLength = 9, ErrorMessage = "Invalid Buff ID")]
         public string buffID {get;set;}
         [Required]
