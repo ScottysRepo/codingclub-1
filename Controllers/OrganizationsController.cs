@@ -46,10 +46,13 @@ namespace CodingClubTest.Controllers
         {
             return View();
         }
+        
 
         //POST: Organization/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
+
+
         public async Task<IActionResult> Create([Bind("ID,Email")] Organization organization)
         {
             if(ModelState.IsValid)
@@ -78,8 +81,8 @@ namespace CodingClubTest.Controllers
         }
 
         // POST: Organizations/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+     
+     
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("ID,Email")] Organization organization)

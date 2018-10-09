@@ -11,5 +11,6 @@ namespace CodingClubTest.Models
         }
 
         public DbSet<Member> Member { get; set; }
+        public DbSet<Organization> Organization {get; set;}
     }
 }

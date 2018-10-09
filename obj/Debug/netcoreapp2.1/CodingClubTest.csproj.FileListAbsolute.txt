@@ -109,3 +109,8 @@ D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.Views.pdb
 D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.dll
 D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.pdb
 D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\CodingClubTest.csproj.CopyComplete
+D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\Razor\Views\Organization\Create.g.cshtml.cs
+D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\Razor\Views\Organization\Delete.g.cshtml.cs
+D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\Razor\Views\Organization\Details.g.cshtml.cs
+D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\Razor\Views\Organization\Edit.g.cshtml.cs
+D:\4390CodingClub\codingclub\obj\Debug\netcoreapp2.1\Razor\Views\Organization\Index.g.cshtml.cs
