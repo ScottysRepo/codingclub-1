@@ -52,7 +52,10 @@ namespace CodingClubTest
 
 
             services.AddDbContext<CodingClubDbContext>(options =>
-                    options.UseSqlite("Data Source=Member.db"));             
+                    options.UseSqlite("Data Source=Member.db")); 
+            
+            services.AddDbContext<CodingClubDbContext>(options =>
+                    options.UseSqlite("Data Source=Client.db"));             
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
