@@ -25,6 +25,18 @@ namespace CodingClubTest.Models
                             Email = "123@wtamu.edu"
                         }
                     );
+
+                    if(context.Client.Any())
+                    {
+                        return; //DB has been seeded
+                    }
+                    context.Client.AddRange(
+                        new Client
+                        {
+                            ID = "1",
+                            Email = "123@wtamu.edu"
+                        }
+                    );
                     context.SaveChanges();
                 }
 
